@@ -34,7 +34,7 @@ function Editors() {
     <StepThree nextHandler={nextHandler} previousHandler={previousHandler} />,
     <StepFour nextHandler={nextHandler} previousHandler={previousHandler} />,
     <StepFive nextHandler={nextHandler} previousHandler={previousHandler} />,
-    <StepSix />,
+    <StepSix previousHandler={previousHandler}/>,
   ];
 
   const printCv = () => {
@@ -51,7 +51,6 @@ function Editors() {
           </div>
           <div className="editor-inner-right">
             <div className="editor-inner-right-title">
-              <p>Template View</p>
               <p onClick={printCv}>Download</p>
             </div>
             <div

@@ -3,11 +3,11 @@ import PackageContext from "../Context/Context";
 
 const Provider = (props) => {
   const [details, setDetails] = useState({
-    fname: "Prasad Narkhedkar",
-    role: "FrontEnd Developer",
-    phone: "+918888888888",
-    email: "prasad@gmail.com",
-    address: "Pune / Maharashtra",
+    fname: "",
+    role: "",
+    phone: "",
+    email: "",
+    address: "",
   });
 
   const [bio, setBio] = useState({

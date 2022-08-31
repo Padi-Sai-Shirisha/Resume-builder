@@ -3,7 +3,7 @@ import "../Styles/StepOne.css";
 
 import Context from "../Context/Context";
 
-function StepSix() {
+function StepSix({previousHandler}) {
   return (
     <Context.Consumer>
       {(context) => (
@@ -34,6 +34,13 @@ function StepSix() {
                 value={context.certificate.certhree}
                 onChange={context.changeCerThree}
               />
+              <button
+                type="submit"
+                className="one-submit"
+                onClick={previousHandler}
+              >
+                Back
+              </button>
             </form>
           </div>
         </div>
